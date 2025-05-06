@@ -204,6 +204,25 @@ ax.set_ylabel('Values')
 ax.set_title('Box Plot')
 ```
 ![image](https://github.com/user-attachments/assets/39210f39-f430-4760-b165-b7c69bdfef33)
+```
+labels='Python','C++','Ruby','Java'
+sizes=[215,130,245,210]
+colors=['gold','yellowgreen','lightcoral','lightskyblue']
+explode=(0,0.4,0,0.5)
+plt.pie(sizes,explode=explode,labels=labels,colors=colors,autopct='%1.1f%%',shadow=True)
+plt.axis('equal')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/590ba149-b9c1-427b-9855-f5036361a7df)
+```
+activities=['eat','sleep','work','play']
+slices=[3,7,8,6]
+colors=['r','y','g','b']
+plt.pie(slices,labels=activities,colors=colors,startangle=90,shadow=True,explode=(0,0,0.1,0),radius=1.2,autopct='%1.1f%%')
+plt.legend()
+```
+![image](https://github.com/user-attachments/assets/03e57eb8-9d07-4c6e-89d3-ad88ff434812)
+
 
 
 # Result:
